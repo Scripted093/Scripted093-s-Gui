@@ -1,0 +1,736 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MessageButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local DiscoButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local JumpscareButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local SkyboxButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local MusicButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local DexButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ParticleButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local KickAllButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Message = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local DecalButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local InfinityYieldButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local BanHammerButton = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local GravityHammerButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local HintButton = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local HDAdminGiverButton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local Login = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_23 = Instance.new("UICorner")
+
+--Properties:
+
+Frame.Parent = game.StarterGui.ScreenGui
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 552, 0, 407)
+Frame.Size = UDim2.new(0, 884, 0, 651)
+Frame.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = Frame
+
+MessageButton.Name = "MessageButton"
+MessageButton.Parent = Frame
+MessageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MessageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MessageButton.BorderSizePixel = 0
+MessageButton.Position = UDim2.new(0, 348, 0, 66)
+MessageButton.Size = UDim2.new(0, 200, 0, 50)
+MessageButton.Font = Enum.Font.SourceSans
+MessageButton.Text = "ShutdownServer"
+MessageButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MessageButton.TextScaled = true
+MessageButton.TextSize = 14.000
+MessageButton.TextWrapped = true
+
+UICorner_2.Parent = MessageButton
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 85)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 884, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Scripted093's Gui"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = TextLabel
+
+DiscoButton.Name = "DiscoButton"
+DiscoButton.Parent = Frame
+DiscoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DiscoButton.BorderSizePixel = 0
+DiscoButton.Position = UDim2.new(0, 43, 0, 132)
+DiscoButton.Size = UDim2.new(0, 200, 0, 50)
+DiscoButton.Font = Enum.Font.SourceSans
+DiscoButton.Text = "Disco"
+DiscoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscoButton.TextScaled = true
+DiscoButton.TextSize = 14.000
+DiscoButton.TextWrapped = true
+
+UICorner_4.Parent = DiscoButton
+
+JumpscareButton.Name = "JumpscareButton"
+JumpscareButton.Parent = Frame
+JumpscareButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpscareButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpscareButton.BorderSizePixel = 0
+JumpscareButton.Position = UDim2.new(0, 43, 0, 202)
+JumpscareButton.Size = UDim2.new(0, 200, 0, 50)
+JumpscareButton.Font = Enum.Font.SourceSans
+JumpscareButton.Text = "???"
+JumpscareButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpscareButton.TextScaled = true
+JumpscareButton.TextSize = 14.000
+JumpscareButton.TextWrapped = true
+
+UICorner_5.Parent = JumpscareButton
+
+SkyboxButton.Name = "SkyboxButton"
+SkyboxButton.Parent = Frame
+SkyboxButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SkyboxButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SkyboxButton.BorderSizePixel = 0
+SkyboxButton.Position = UDim2.new(0, 43, 0, 66)
+SkyboxButton.Size = UDim2.new(0, 200, 0, 50)
+SkyboxButton.Font = Enum.Font.SourceSans
+SkyboxButton.Text = "Skybox"
+SkyboxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyboxButton.TextScaled = true
+SkyboxButton.TextSize = 14.000
+SkyboxButton.TextWrapped = true
+
+UICorner_6.Parent = SkyboxButton
+
+MusicButton.Name = "MusicButton"
+MusicButton.Parent = Frame
+MusicButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MusicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MusicButton.BorderSizePixel = 0
+MusicButton.Position = UDim2.new(0, 348, 0, 132)
+MusicButton.Size = UDim2.new(0, 200, 0, 50)
+MusicButton.Font = Enum.Font.SourceSans
+MusicButton.Text = "Music [LOUD]"
+MusicButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MusicButton.TextScaled = true
+MusicButton.TextSize = 14.000
+MusicButton.TextWrapped = true
+
+UICorner_7.Parent = MusicButton
+
+DexButton.Name = "DexButton"
+DexButton.Parent = Frame
+DexButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DexButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DexButton.BorderSizePixel = 0
+DexButton.Position = UDim2.new(0, 348, 0, 202)
+DexButton.Size = UDim2.new(0, 200, 0, 50)
+DexButton.Font = Enum.Font.SourceSans
+DexButton.Text = "Dex"
+DexButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DexButton.TextScaled = true
+DexButton.TextSize = 14.000
+DexButton.TextWrapped = true
+
+UICorner_8.Parent = DexButton
+
+ParticleButton.Name = "ParticleButton"
+ParticleButton.Parent = Frame
+ParticleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ParticleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ParticleButton.BorderSizePixel = 0
+ParticleButton.Position = UDim2.new(0, 641, 0, 66)
+ParticleButton.Size = UDim2.new(0, 200, 0, 50)
+ParticleButton.Font = Enum.Font.SourceSans
+ParticleButton.Text = "Particle"
+ParticleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ParticleButton.TextScaled = true
+ParticleButton.TextSize = 14.000
+ParticleButton.TextWrapped = true
+
+UICorner_9.Parent = ParticleButton
+
+KickAllButton.Name = "KickAllButton"
+KickAllButton.Parent = Frame
+KickAllButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KickAllButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KickAllButton.BorderSizePixel = 0
+KickAllButton.Position = UDim2.new(0, 641, 0, 131)
+KickAllButton.Size = UDim2.new(0, 200, 0, 50)
+KickAllButton.Font = Enum.Font.SourceSans
+KickAllButton.Text = "Kick All"
+KickAllButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+KickAllButton.TextScaled = true
+KickAllButton.TextSize = 14.000
+KickAllButton.TextWrapped = true
+
+UICorner_10.Parent = KickAllButton
+
+Message.Name = "Message"
+Message.Parent = Frame
+Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Message.BorderSizePixel = 0
+Message.Position = UDim2.new(0, 641, 0, 201)
+Message.Size = UDim2.new(0, 200, 0, 50)
+Message.Font = Enum.Font.SourceSans
+Message.Text = "Message"
+Message.TextColor3 = Color3.fromRGB(0, 0, 0)
+Message.TextScaled = true
+Message.TextSize = 14.000
+Message.TextWrapped = true
+
+UICorner_11.Parent = Message
+
+DecalButton.Name = "DecalButton"
+DecalButton.Parent = Frame
+DecalButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DecalButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DecalButton.BorderSizePixel = 0
+DecalButton.Position = UDim2.new(0, 43, 0, 267)
+DecalButton.Size = UDim2.new(0, 200, 0, 50)
+DecalButton.Font = Enum.Font.SourceSans
+DecalButton.Text = "Decal"
+DecalButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DecalButton.TextScaled = true
+DecalButton.TextSize = 14.000
+DecalButton.TextWrapped = true
+
+UICorner_12.Parent = DecalButton
+
+InfinityYieldButton.Name = "InfinityYieldButton"
+InfinityYieldButton.Parent = Frame
+InfinityYieldButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfinityYieldButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfinityYieldButton.BorderSizePixel = 0
+InfinityYieldButton.Position = UDim2.new(0, 348, 0, 267)
+InfinityYieldButton.Size = UDim2.new(0, 200, 0, 50)
+InfinityYieldButton.Font = Enum.Font.SourceSans
+InfinityYieldButton.Text = "Infinity Yield"
+InfinityYieldButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfinityYieldButton.TextScaled = true
+InfinityYieldButton.TextSize = 14.000
+InfinityYieldButton.TextWrapped = true
+
+UICorner_13.Parent = InfinityYieldButton
+
+BanHammerButton.Name = "BanHammerButton"
+BanHammerButton.Parent = Frame
+BanHammerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BanHammerButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BanHammerButton.BorderSizePixel = 0
+BanHammerButton.Position = UDim2.new(0, 641, 0, 266)
+BanHammerButton.Size = UDim2.new(0, 200, 0, 50)
+BanHammerButton.Font = Enum.Font.SourceSans
+BanHammerButton.Text = "Ban Hammer"
+BanHammerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BanHammerButton.TextScaled = true
+BanHammerButton.TextSize = 14.000
+BanHammerButton.TextWrapped = true
+
+UICorner_14.Parent = BanHammerButton
+
+GravityHammerButton.Name = "GravityHammerButton"
+GravityHammerButton.Parent = Frame
+GravityHammerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GravityHammerButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GravityHammerButton.BorderSizePixel = 0
+GravityHammerButton.Position = UDim2.new(0, 43, 0, 332)
+GravityHammerButton.Size = UDim2.new(0, 200, 0, 50)
+GravityHammerButton.Font = Enum.Font.SourceSans
+GravityHammerButton.Text = "Gravity Hammer"
+GravityHammerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GravityHammerButton.TextScaled = true
+GravityHammerButton.TextSize = 14.000
+GravityHammerButton.TextWrapped = true
+
+UICorner_15.Parent = GravityHammerButton
+
+HintButton.Name = "HintButton"
+HintButton.Parent = Frame
+HintButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HintButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HintButton.BorderSizePixel = 0
+HintButton.Position = UDim2.new(0, 348, 0, 332)
+HintButton.Size = UDim2.new(0, 200, 0, 50)
+HintButton.Font = Enum.Font.SourceSans
+HintButton.Text = "Hint"
+HintButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HintButton.TextScaled = true
+HintButton.TextSize = 14.000
+HintButton.TextWrapped = true
+
+UICorner_16.Parent = HintButton
+
+HDAdminGiverButton.Name = "HDAdminGiverButton"
+HDAdminGiverButton.Parent = Frame
+HDAdminGiverButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HDAdminGiverButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HDAdminGiverButton.BorderSizePixel = 0
+HDAdminGiverButton.Position = UDim2.new(0, 641, 0, 331)
+HDAdminGiverButton.Size = UDim2.new(0, 200, 0, 50)
+HDAdminGiverButton.Font = Enum.Font.SourceSans
+HDAdminGiverButton.Text = "HD Admin Giver"
+HDAdminGiverButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HDAdminGiverButton.TextScaled = true
+HDAdminGiverButton.TextSize = 14.000
+HDAdminGiverButton.TextWrapped = true
+
+UICorner_17.Parent = HDAdminGiverButton
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.800
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0486425348, 0, 0.640552998, 0)
+TextLabel_2.Size = UDim2.new(0, 798, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "More Features Soon!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_18.Parent = TextLabel_2
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0486425348, 0, 0.774193525, 0)
+TextLabel_3.Size = UDim2.new(0, 259, 0, 71)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Credits: Scripted093"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner_19.Parent = TextLabel_3
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.341628969, 0, 0.723502278, 0)
+ImageLabel.Size = UDim2.new(0, 136, 0, 137)
+ImageLabel.Image = "rbxassetid://104369264861464"
+
+Login.Name = "Login"
+Login.Parent = game.StarterGui.ScreenGui
+Login.AnchorPoint = Vector2.new(0.5, 0.5)
+Login.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Login.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0, 552, 0, 407)
+Login.Size = UDim2.new(0, 552, 0, 407)
+
+TextBox.Parent = Login
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0814479664, 0, 0.203389823, 0)
+TextBox.Size = UDim2.new(0, 462, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = TextBox
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.283549786, 0, 2.5, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Enter"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_20.Parent = TextButton
+
+UICorner_21.Parent = TextBox
+
+UICorner_22.Parent = Login
+
+TextLabel_4.Parent = Login
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(0, 552, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Password:"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_23.Parent = TextLabel_4
+
+-- Scripts:
+
+local function VLED_fake_script() -- MessageButton.Script 
+	local script = Instance.new('Script', MessageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		hint = Instance.new("Hint", game.Workspace)
+		hint.Text = "Scripted093: lost?"
+		wait(5)
+		hint.Text = "cXyzkidd: frightened?"
+		wait(5)
+		hint.Text = "cXyzkidd: CONFUSED? GOOD HAHAHAHAHAHAHA"
+		wait(5)
+		hint.Text = "The Server Will Shutdown in: 3"
+		wait(1)
+		hint.Text = "The Server Will Shutdown in: 2"
+		wait(1)
+		hint.Text = "The Server Will Shutdown in: 1"
+		wait(1)
+		for i,v in pairs(game.Players:GetChildren()) do v:Kick("TEAM CXYZKIDD JOIN TODAY! getz kicked noob") end
+	
+	end)
+end
+coroutine.wrap(VLED_fake_script)()
+local function FGTHVL_fake_script() -- DiscoButton.Script 
+	local script = Instance.new('Script', DiscoButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		Lighting.TimeOfDay = "15:00"
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+	end)
+end
+coroutine.wrap(FGTHVL_fake_script)()
+local function NCWUW_fake_script() -- JumpscareButton.Script 
+	local script = Instance.new('Script', JumpscareButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local jumpscareSound = Instance.new("Sound", workspace)
+		jumpscareSound.Name = "JumpscareSound"
+		jumpscareSound.Volume = 999
+		jumpscareSound.Pitch = 1
+		jumpscareSound.SoundId = "rbxassetid://6129291390"
+	
+		local jumpscareGUI = Instance.new("ScreenGui", nil)
+		jumpscareGUI.Name = "Jumpscare"
+		local image = Instance.new("ImageLabel", jumpscareGUI)
+		image.Name = "JumpscareImage"
+		image.BackgroundColor3 = Color3.new(0, 0, 0)
+		image.BorderColor3 = Color3.new(255, 255, 255)
+		image.BorderSizePixel = 0
+		image.Size = UDim2.new(1, 0, 1, 0)
+		image.Image = "http://www.roblox.com/asset/?id=104369264861464"
+		image.Active = true
+	
+		for i, c in pairs(game.Players:GetChildren()) do
+			local jumpscareClone = jumpscareGUI:Clone()
+			jumpscareClone.Parent = c.PlayerGui
+		end
+		jumpscareSound:Play()
+		wait(10)
+		jumpscareSound:Destroy()
+		for i, c in pairs(game.Players:GetChildren()) do
+			c.PlayerGui.Jumpscare:Destroy()
+		end
+	end)
+end
+coroutine.wrap(NCWUW_fake_script)()
+local function RMMFE_fake_script() -- SkyboxButton.Script 
+	local script = Instance.new('Script', SkyboxButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		s = Instance.new("Sky") --
+		s.Name = "Sky"  --
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=104369264861464"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=104369264861464"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=104369264861464"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=104369264861464"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=104369264861464"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=104369264861464"
+	end)
+end
+coroutine.wrap(RMMFE_fake_script)()
+local function USLJP_fake_script() -- MusicButton.Script 
+	local script = Instance.new('Script', MusicButton)
+
+	function onClick()
+		local cXyzkidd		= Instance.new("Sound")
+		cXyzkidd.Parent		= game:GetService("Workspace") 
+		cXyzkidd.SoundId	= "rbxassetid://16190761193" -- ID
+		cXyzkidd.Playing	= true --Playing tur = playing audio 
+		cXyzkidd.Looped		= true --Looping
+		cXyzkidd.Pitch      = 1 --pitch, speed play back
+		cXyzkidd.Volume		= 10 --volume
+		cXyzkidd.Distortion = 6969 --distortion
+	
+	end
+	
+	script.Parent.MouseButton1Down:connect(onClick)
+	
+end
+coroutine.wrap(USLJP_fake_script)()
+local function EHYQMG_fake_script() -- DexButton.ClientHandler 
+	local script = Instance.new('LocalScript', DexButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(EHYQMG_fake_script)()
+local function AHVRQN_fake_script() -- ParticleButton.Script 
+	local script = Instance.new('Script', ParticleButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(game.Workspace:GetDescendants()) do
+			local emit = Instance.new("ParticleEmitter")
+			emit.Parent = v
+			emit.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+			emit.VelocitySpread = 1000000
+			emit.Rate = 100000
+		end
+	end)
+	
+end
+coroutine.wrap(AHVRQN_fake_script)()
+local function CRDEPD_fake_script() -- KickAllButton.Script 
+	local script = Instance.new('Script', KickAllButton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i, players in pairs(game.Players:GetChildren()) do
+			players:Kick("Scripted093 user has kicked you all out of the server!")
+		end
+	end)
+	
+end
+coroutine.wrap(CRDEPD_fake_script)()
+local function NAPPAH_fake_script() -- Message.Script 
+	local script = Instance.new('Script', Message)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fake = Instance.new("Message")
+		fake.Parent = workspace
+		fake.Text =  "Scripted093 hacked you.."
+		wait(2)
+		fake:Destroy()
+	end)
+end
+coroutine.wrap(NAPPAH_fake_script)()
+local function XUPMUJC_fake_script() -- Frame.Dragable 
+	local script = Instance.new('LocalScript', Frame)
+
+	function dragify(Main)
+		dragToggle = nil
+		dragSpeed = 0.90 
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+	
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+		end
+	
+		Main.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Main.Position
+				input.Changed:Connect(function()
+					if (input.UserInputState == Enum.UserInputState.End) then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+	
+		Main.InputChanged:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+				dragInput = input
+			end
+		end)
+	
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if (input == dragInput and dragToggle) then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(XUPMUJC_fake_script)()
+local function QIRBRKY_fake_script() -- DecalButton.Script 
+	local script = Instance.new('Script', DecalButton)
+
+	function click()
+		function exPro(root)
+			for _, v in pairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=104369264861464" then
+					v.Parent = nil
+				elseif v:IsA("BasePart") then
+					v.Material = "Plastic"
+					v.Transparency = 0
+					local One = Instance.new("Decal", v)
+					local Two = Instance.new("Decal", v)
+					local Three = Instance.new("Decal", v)
+					local Four = Instance.new("Decal", v)
+					local Five = Instance.new("Decal", v)
+					local Six = Instance.new("Decal", v)
+					One.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					Two.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					Three.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					Four.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					Five.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					Six.Texture = "http://www.roblox.com/asset/?id=104369264861464"
+					One.Face = "Front"
+					Two.Face = "Back"
+					Three.Face = "Right"
+					Four.Face = "Left"
+					Five.Face = "Top"
+					Six.Face = "Bottom"
+				end
+				exPro(v)
+			end
+		end
+		function asdf(root)
+			for _, v in pairs(root:GetChildren()) do
+				asdf(v)
+			end
+		end
+		exPro(game.Workspace)
+		asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+	
+	
+end
+coroutine.wrap(QIRBRKY_fake_script)()
+local function GNTXVGW_fake_script() -- InfinityYieldButton.ClientHandler 
+	local script = Instance.new('LocalScript', InfinityYieldButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(GNTXVGW_fake_script)()
+local function HZUCKY_fake_script() -- BanHammerButton.ClientHandler 
+	local script = Instance.new('LocalScript', BanHammerButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(HZUCKY_fake_script)()
+local function YGOYK_fake_script() -- GravityHammerButton.ClientHandler 
+	local script = Instance.new('LocalScript', GravityHammerButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(YGOYK_fake_script)()
+local function UPAPU_fake_script() -- HintButton.Script 
+	local script = Instance.new('Script', HintButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local m = Instance.new("Hint", game.workspace)
+		m.Text = "Team Scripted093 .gg/tQ6ZQ25pnk"
+	end)
+	
+	
+end
+coroutine.wrap(UPAPU_fake_script)()
+local function QDBNGK_fake_script() -- HDAdminGiverButton.ClientHandler 
+	local script = Instance.new('LocalScript', HDAdminGiverButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(QDBNGK_fake_script)()
+local function BYBG_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	-- serverside hub part 4, please watch part 1, 2, 3 and 4 first.
+	
+	-- put this script under textbutton!!
+	
+	local MainFrame = script.Parent.Parent.Parent.Parent.Frame
+	local TextBox = script.Parent.Parent.Parent.TextBox
+	local login = script.Parent.Parent.Parent.Parent.Login
+	
+	login.Visible = true
+	MainFrame.Visible = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if TextBox.Text == "093" then
+			login.Visible = false
+			wait(2)
+			MainFrame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(BYBG_fake_script)()
