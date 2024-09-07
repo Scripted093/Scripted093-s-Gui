@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local MessageButton = Instance.new("TextButton")
@@ -53,7 +54,10 @@ local UICorner_23 = Instance.new("UICorner")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Frame.BorderSizePixel = 0
@@ -361,7 +365,7 @@ ImageLabel.Size = UDim2.new(0, 136, 0, 137)
 ImageLabel.Image = "rbxassetid://104369264861464"
 
 Login.Name = "Login"
-Login.Parent = game.StarterGui.ScreenGui
+Login.Parent = ScreenGui
 Login.AnchorPoint = Vector2.new(0.5, 0.5)
 Login.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Login.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -415,7 +419,7 @@ UICorner_23.Parent = TextLabel_4
 
 -- Scripts:
 
-local function VLED_fake_script() -- MessageButton.Script 
+local function UGVD_fake_script() -- MessageButton.Script 
 	local script = Instance.new('Script', MessageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -436,8 +440,8 @@ local function VLED_fake_script() -- MessageButton.Script
 	
 	end)
 end
-coroutine.wrap(VLED_fake_script)()
-local function FGTHVL_fake_script() -- DiscoButton.Script 
+coroutine.wrap(UGVD_fake_script)()
+local function GOEYJIV_fake_script() -- DiscoButton.Script 
 	local script = Instance.new('Script', DiscoButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -459,8 +463,8 @@ local function FGTHVL_fake_script() -- DiscoButton.Script
 		end
 	end)
 end
-coroutine.wrap(FGTHVL_fake_script)()
-local function NCWUW_fake_script() -- JumpscareButton.Script 
+coroutine.wrap(GOEYJIV_fake_script)()
+local function ASYUXM_fake_script() -- JumpscareButton.Script 
 	local script = Instance.new('Script', JumpscareButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -493,8 +497,8 @@ local function NCWUW_fake_script() -- JumpscareButton.Script
 		end
 	end)
 end
-coroutine.wrap(NCWUW_fake_script)()
-local function RMMFE_fake_script() -- SkyboxButton.Script 
+coroutine.wrap(ASYUXM_fake_script)()
+local function WAFUNZ_fake_script() -- SkyboxButton.Script 
 	local script = Instance.new('Script', SkyboxButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -509,8 +513,8 @@ local function RMMFE_fake_script() -- SkyboxButton.Script
 		s.SkyboxUp = "http://www.roblox.com/asset/?id=104369264861464"
 	end)
 end
-coroutine.wrap(RMMFE_fake_script)()
-local function USLJP_fake_script() -- MusicButton.Script 
+coroutine.wrap(WAFUNZ_fake_script)()
+local function QKNEMG_fake_script() -- MusicButton.Script 
 	local script = Instance.new('Script', MusicButton)
 
 	function onClick()
@@ -528,16 +532,16 @@ local function USLJP_fake_script() -- MusicButton.Script
 	script.Parent.MouseButton1Down:connect(onClick)
 	
 end
-coroutine.wrap(USLJP_fake_script)()
-local function EHYQMG_fake_script() -- DexButton.ClientHandler 
+coroutine.wrap(QKNEMG_fake_script)()
+local function RNEFRV_fake_script() -- DexButton.ClientHandler 
 	local script = Instance.new('LocalScript', DexButton)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(EHYQMG_fake_script)()
-local function AHVRQN_fake_script() -- ParticleButton.Script 
+coroutine.wrap(RNEFRV_fake_script)()
+local function XMSO_fake_script() -- ParticleButton.Script 
 	local script = Instance.new('Script', ParticleButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -551,8 +555,8 @@ local function AHVRQN_fake_script() -- ParticleButton.Script
 	end)
 	
 end
-coroutine.wrap(AHVRQN_fake_script)()
-local function CRDEPD_fake_script() -- KickAllButton.Script 
+coroutine.wrap(XMSO_fake_script)()
+local function XLVJW_fake_script() -- KickAllButton.Script 
 	local script = Instance.new('Script', KickAllButton)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -562,8 +566,8 @@ local function CRDEPD_fake_script() -- KickAllButton.Script
 	end)
 	
 end
-coroutine.wrap(CRDEPD_fake_script)()
-local function NAPPAH_fake_script() -- Message.Script 
+coroutine.wrap(XLVJW_fake_script)()
+local function YYFL_fake_script() -- Message.Script 
 	local script = Instance.new('Script', Message)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -574,8 +578,8 @@ local function NAPPAH_fake_script() -- Message.Script
 		fake:Destroy()
 	end)
 end
-coroutine.wrap(NAPPAH_fake_script)()
-local function XUPMUJC_fake_script() -- Frame.Dragable 
+coroutine.wrap(YYFL_fake_script)()
+local function KUUEF_fake_script() -- Frame.Dragable 
 	local script = Instance.new('LocalScript', Frame)
 
 	function dragify(Main)
@@ -620,8 +624,8 @@ local function XUPMUJC_fake_script() -- Frame.Dragable
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(XUPMUJC_fake_script)()
-local function QIRBRKY_fake_script() -- DecalButton.Script 
+coroutine.wrap(KUUEF_fake_script)()
+local function WIHXD_fake_script() -- DecalButton.Script 
 	local script = Instance.new('Script', DecalButton)
 
 	function click()
@@ -667,32 +671,32 @@ local function QIRBRKY_fake_script() -- DecalButton.Script
 	
 	
 end
-coroutine.wrap(QIRBRKY_fake_script)()
-local function GNTXVGW_fake_script() -- InfinityYieldButton.ClientHandler 
+coroutine.wrap(WIHXD_fake_script)()
+local function IYJRBK_fake_script() -- InfinityYieldButton.ClientHandler 
 	local script = Instance.new('LocalScript', InfinityYieldButton)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(GNTXVGW_fake_script)()
-local function HZUCKY_fake_script() -- BanHammerButton.ClientHandler 
+coroutine.wrap(IYJRBK_fake_script)()
+local function ARVXDC_fake_script() -- BanHammerButton.ClientHandler 
 	local script = Instance.new('LocalScript', BanHammerButton)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(HZUCKY_fake_script)()
-local function YGOYK_fake_script() -- GravityHammerButton.ClientHandler 
+coroutine.wrap(ARVXDC_fake_script)()
+local function TKLUJHS_fake_script() -- GravityHammerButton.ClientHandler 
 	local script = Instance.new('LocalScript', GravityHammerButton)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(YGOYK_fake_script)()
-local function UPAPU_fake_script() -- HintButton.Script 
+coroutine.wrap(TKLUJHS_fake_script)()
+local function EDZHHFJ_fake_script() -- HintButton.Script 
 	local script = Instance.new('Script', HintButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -702,16 +706,16 @@ local function UPAPU_fake_script() -- HintButton.Script
 	
 	
 end
-coroutine.wrap(UPAPU_fake_script)()
-local function QDBNGK_fake_script() -- HDAdminGiverButton.ClientHandler 
+coroutine.wrap(EDZHHFJ_fake_script)()
+local function YKHNUOR_fake_script() -- HDAdminGiverButton.ClientHandler 
 	local script = Instance.new('LocalScript', HDAdminGiverButton)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(QDBNGK_fake_script)()
-local function BYBG_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YKHNUOR_fake_script)()
+local function WMSWEUZ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	-- serverside hub part 4, please watch part 1, 2, 3 and 4 first.
@@ -733,4 +737,4 @@ local function BYBG_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BYBG_fake_script)()
+coroutine.wrap(WMSWEUZ_fake_script)()
